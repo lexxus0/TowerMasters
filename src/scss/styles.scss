@@ -1,18 +1,58 @@
 @import './header.scss';
-@import './vite-promo.scss';
+@import './hero.scss';
+@import './advanages.scss';
+@import './reviews.scss';
+@import './about-the-app.scss';
+@import './gallery.scss';
+@import './download.scss';
+@import './footer.scss';
+
+@font-face {
+  font-family: 'Aclonica';
+  src: url('../fonts/Aclonica-Regular.ttf');
+}
+
+@font-face {
+  font-family: 'Cinzel';
+  src: url('../fonts/Cinzel-VariableFont_wght.ttf');
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('../fonts/Jost-VariableFont_wght.ttf');
+}
 
 :root {
-  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  font-weight: 400;
-
-  color: #242424;
-  background-color: rgba(255, 255, 255, 0.87);
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-text-size-adjust: 100%;
+  --font-family: 'Cinzel', sans-serif;
+  --second-family: 'Jost', sans-serif;
+  --third-family: 'Aclonica', sans-serif;
+  --main-background: #cee7e9;
+  --color-heder: #5642cd;
+  --color-footer: #ffc786;
+  ---stroke-color-footer: #e99b9b;
+  --color-7-blok-ready: #bad576;
+  --color--7-blok-ready: #a9ea06;
+  --color-gallery: #79e3fe;
+  --color--stroke-gallery: #24d2ff;
+  --color--about-the-app: #d8ab9e;
+  --color-stroke--about-the-app: #f2b282;
+  --color-reviews: #9fed04;
+  --color-stroke-reviews: #46bd08;
+  --color-advantages: #fffec7;
+  --color-stroke-advantages: #f7f0a3;
+  --color-disclaimer: #4fa4d3;
+  --color-stroke-disclaimer: #81bddf;
+  --color-home: #c3efb4;
+  --color-stroke-home: #91d516;
+  --color-7-blok--: #d5fa77;
+  --color-stroke-7-7-blok: #bad576;
+  --color: #cda2fc;
+  --color-2-stroke: #9881b2;
+  --color--3: #ffaa47;
+  --color--stroke: #e6cbab;
+  --color-4: #fdf3f7;
+  --color-5-stroke: #ffd0e3;
+  --color-gamburger: #ff9c00;
+  --color-5tan--batton-heder: #96e3ed;
+  --color-5--napis--footer-: #1f0b58;
 }
