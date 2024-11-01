@@ -1,0 +1,86 @@
+.header-menu-open-btn {
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.close-btn {
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: none;
+  display: flex;
+}
+
+.menu-open-button-svg {
+  width: 40px;
+  height: 40px;
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #5642cd;
+  border-radius: 16px;
+}
+
+.header-section {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  z-index: 999;
+  opacity: 0;
+  visibility: hidden;
+  background-image: url('/img/backdrop/backdrop.png');
+  background-position: center;
+}
+
+.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.backdrop-wrap {
+  position: relative;
+  top: 85px;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.header-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.menu-item {
+  font-family: Cinzel;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  text-align: left;
+}
+
+.menu-close-button-svg {
+  width: 16px;
+  height: 16px;
+  stroke: #0b0b0b;
+}
