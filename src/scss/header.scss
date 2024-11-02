@@ -77,6 +77,14 @@
   background-size: contain;
 }
 
+/* retina screen */
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+       only screen and (min-resolution: 192dpi) {
+  .backdrop {
+    background-image: url('/img/backdrop/backdrop@2x.png');
+  }
+}
+
 .show {
   opacity: 1;
   visibility: visible;
@@ -98,7 +106,6 @@
 }
 
 .item-link-bd {
-  font-family: var(--font-family);
   font-size: 14px;
   font-weight: 700;
   line-height: 1.4;
