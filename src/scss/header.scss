@@ -1,3 +1,39 @@
+.header-section {
+  position: fixed;
+  top: 24px;
+  left: 0;
+  right: 0;
+  z-index: 1000;
+
+  @include media(desktop) {
+    display: flex;
+    justify-content: center;
+    top: 32px;
+  }
+}
+
+.header-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-heder);
+  border-radius: 16px;
+
+  @include media(desktop) {
+    width: 1100px;
+    height: 140px;
+  }
+}
+
+.header-logo {
+  width: 60px;
+  height: 40px;
+  @include media(desktop) {
+    width: 190px;
+    height: 140px;
+  }
+}
+
 .header-menu-open-btn {
   background: transparent;
   width: 40px;
@@ -6,6 +42,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @include media(desktop) {
+    display: none;
+  }
 }
 
 .close-btn {
@@ -22,22 +62,6 @@
   height: 40px;
 }
 
-.header-wrap {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #5642cd;
-  border-radius: 16px;
-}
-
-.header-section {
-  position: fixed;
-  top: 24px;
-  left: 0;
-  right: 0;
-  z-index: 1000;
-}
-
 .backdrop {
   position: fixed;
   top: 0;
@@ -50,6 +74,7 @@
   visibility: hidden;
   background-image: url('/img/backdrop/backdrop.png');
   background-position: center;
+  background-size: contain;
 }
 
 .show {
@@ -72,11 +97,11 @@
   gap: 32px;
 }
 
-.menu-item {
-  font-family: Cinzel;
+.item-link-bd {
+  font-family: var(--font-family);
   font-size: 14px;
   font-weight: 700;
-  line-height: 20px;
+  line-height: 1.4;
   text-align: left;
 }
 
@@ -87,4 +112,40 @@
   position: absolute;
   top: 0;
   left: 0;
+}
+
+.hiden-menu {
+  display: none;
+  gap: 24px;
+  margin-right: 42px;
+  @include media(desktop) {
+    display: flex;
+  }
+}
+
+.menu-hiden-item {
+
+  background-color: #daf4fa;
+  border-radius: 8px;
+  min-width: 134px;
+  min-height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-app-item {
+  min-width: 191px;
+}
+
+.adventages-item {
+  min-width: 155px;
+}
+
+.item-link {
+  font-family: var(--font-family);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 1.4;
+  color: #0b0b0b;
 }
