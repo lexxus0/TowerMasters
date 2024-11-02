@@ -13,7 +13,8 @@
   height: 30px;
   background: transparent;
   border: none;
-  display: flex;
+  align-items: center;
+  position: relative;
 }
 
 .menu-open-button-svg {
@@ -80,7 +81,10 @@
 }
 
 .menu-close-button-svg {
-  width: 16px;
-  height: 16px;
+  width: 30px;
+  height: 30px;
   stroke: #0b0b0b;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
