@@ -1,0 +1,100 @@
+.privacy_policy {
+  position: relative;
+  max-width: 320px;
+  margin: 0 auto;
+  @media screen and (min-width: 1200px) {
+    max-width: 1200px;
+  }
+}
+
+.privacy_policy_heading {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 24px auto 60px auto;
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+
+.privacy_policy_heading_pp {
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 24px;
+  text-align: center;
+  margin: 90px auto 0 auto;
+  @media screen and (min-width: 1200px) {
+    font-size: 50px;
+  }
+}
+
+.privacy_policy_wrapper {
+  margin: 7px auto 60px;
+  padding: 24px 16px 40px 16px;
+  @media screen and (min-width: 1200px) {
+    margin: 10px auto 80px;
+    padding: 40px 70px;
+  }
+  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  .last {
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .left {
+    text-align: left;
+  }
+  li {
+    font-family: var(--font-family);
+    list-style-type: disc;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: left;
+    margin-left: 30px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+      margin-left: 80px;
+    }
+  }
+  span {
+    font-weight: bold;
+  }
+}
+
+.privacy_policy_wrapper:nth-child(1) {
+  background-color: var(--color-home);
+}
+.privacy_policy_wrapper:nth-child(2) {
+  background-color: var(--color-disclaimer);
+}
+.privacy_policy_wrapper:nth-child(3) {
+  background-color: var(--color-advantages);
+}
+.privacy_policy_wrapper:nth-child(4) {
+  background-color: var(--color-reviews);
+}
+.privacy_policy_wrapper:nth-child(5) {
+  background-color: var(--color--about-the-app);
+}
+.privacy_policy_wrapper:nth-child(6) {
+  background-color: var(--color-gallery);
+}
+.privacy_policy_wrapper:nth-child(7) {
+  background-color: var(--color-7-blok--);
+}
+.privacy_policy_wrapper:nth-child(8) {
+  background-color: var(--color--3);
+}
+.privacy_policy_wrapper:nth-child(9) {
+  background-color: var(--color-4);
+}
+.privacy_policy_wrapper:nth-child(10) {
+  background-color: var(--color);
+}
