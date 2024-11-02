@@ -1,0 +1,73 @@
+.about-app-section {
+  background-image: url('/img/background-about-app/bg-about-app.png');
+  background-size: cover;
+  background-position: center;
+  // background-size: contain;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2),
+  only screen and (min-resolution: 192dpi) {
+  .about-app-section {
+    background-image: url('/img/background-about-app/bg-about-app@2x.png');
+  }
+}
+
+.title-wrap-about {
+  position: relative;
+  padding-top: 5px;
+}
+
+.about-app-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.35;
+  color: #000000;
+  white-space: nowrap;
+}
+
+.content-wrap-about {
+  padding-top: 24px;
+}
+
+.rounded-video {
+
+border-radius: 16px;
+border: 6px solid #F2B282;
+
+
+
+}
+
+.text-about-wrap {
+  padding-top: 24px;
+  padding-bottom: 40px;
+}
+
+.text-about span {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.text-about {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.span-text {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 1.35;
+}
+
+
