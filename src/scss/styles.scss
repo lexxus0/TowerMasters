@@ -1,11 +1,14 @@
-@import './header.scss';
+// @import './header.scss';
 @import './hero.scss';
-@import './advanages.scss';
+// @import './advanages.scss';
 @import './reviews.scss';
-@import './about-the-app.scss';
+// @import './about-the-app.scss';
 @import './gallery.scss';
-@import './download.scss';
+// @import './download.scss';
 @import './footer.scss';
+@import './back-to-home.scss';
+@import './privacy-policy.scss';
+// @import './terms-of-service.scss';
 
 @font-face {
   font-family: 'Aclonica';
@@ -55,4 +58,8 @@
   --color-gamburger: #ff9c00;
   --color-5tan--batton-heder: #96e3ed;
   --color-5--napis--footer-: #1f0b58;
+}
+
+body {
+  background-color: var(--main-background);
 }
