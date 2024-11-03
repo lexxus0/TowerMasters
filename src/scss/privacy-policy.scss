@@ -37,8 +37,8 @@
     0 3px 8px rgba(136, 144, 194, 0.25);
   border: none;
   position: absolute;
-  top: 15px;
-  left: 20px;
+  top: 0;
+  left: 0;
   z-index: 1;
 }
 
@@ -48,7 +48,7 @@
     padding: 23px 32px;
     width: 277px;
     top: 0;
-    left: 0;
+    left: -35px;
     height: 80px;
   }
 }
@@ -56,6 +56,7 @@
 .bth_content_wrapper {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 
@@ -101,7 +102,7 @@
 
 .privacy_policy_wrapper:nth-child(1) {
   background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-size: cover;
   @media screen and (min-width: 1200px) {
     background-size: contain;
     background-image: url('../img/page/bgppdesk.png');
@@ -171,9 +172,13 @@
   }
 }
 
-.back_to_home_btn p {
+.back_to_home_btn span {
   font-family: var(--font-family);
   font-weight: 500;
-  font-size: 10px;
+  font-size: 12px;
   color: #1e1e1e;
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 24px;
+  }
 }

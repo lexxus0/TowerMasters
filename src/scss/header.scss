@@ -79,7 +79,7 @@
 
 /* retina screen */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
-       only screen and (min-resolution: 192dpi) {
+  only screen and (min-resolution: 192dpi) {
   .backdrop {
     background-image: url('/img/backdrop/backdrop@2x.png');
   }
@@ -130,7 +130,7 @@
   }
 }
 
-.menu-hiden-item .item-link{
+.menu-hiden-item .item-link {
   background-color: #daf4fa;
   border-radius: 8px;
   min-width: 134px;
