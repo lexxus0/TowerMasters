@@ -1,9 +1,11 @@
 .footer_section {
   max-width: $mobile;
-  margin: 0 auto 7px auto;
-  background-color: var(--color-footer);
+  margin: 0 auto;
+  background-image: url('../img/footer/bgfooterMob.png');
+  background-size: contain;
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
+    background-image: url('../img/footer/bgfooterDesk.png');
   }
 }
 

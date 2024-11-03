@@ -2,7 +2,8 @@
   max-width: 320px;
   margin: 0 auto;
   padding-top: 88px;
-  background-color: var(--color-home);
+  background-image: url('../img/hero/bgheromob.png');
+  background-size: contain;
   margin-bottom: 60px;
 
   @media screen and (min-width: 1200px) {
