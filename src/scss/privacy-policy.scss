@@ -156,13 +156,13 @@
     background-image: url('../img/page/bgltowDesk.png');
   }
 }
-// .privacy_policy_wrapper:nth-child(9) {
-//   background-image: url('../img/page/bgppmob.png');
-//   background-size: contain;
-//   @media screen and (min-width: 1200px) {
-//     background-image: url('../img/page/bgppdesk.png');
-//   }
-// }
+.privacy_policy_wrapper:nth-child(9) {
+  background-image: url('../img/page/bgcttpMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcttpDesk.png');
+  }
+}
 .privacy_policy_wrapper:nth-child(10) {
   background-image: url('../img/page/bgcuMob.png');
   background-size: cover;
