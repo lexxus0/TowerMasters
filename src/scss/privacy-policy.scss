@@ -69,32 +69,73 @@
 }
 
 .privacy_policy_wrapper:nth-child(1) {
-  background-color: var(--color-home);
+  background-image: url('../img/page/bgppmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-size: contain;
+    background-image: url('../img/page/bgppdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(2) {
-  background-color: var(--color-disclaimer);
+  background-image: url('../img/page/bgiwcmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgiwcdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(3) {
-  background-color: var(--color-advantages);
+  background-image: url('../img/page/bghwumob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bghwudesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(4) {
-  background-color: var(--color-reviews);
+  background-image: url('../img/page/bgtpsmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgtpsdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(5) {
-  background-color: var(--color--about-the-app);
+  background-image: url('../img/page/bgcattmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcattdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(6) {
-  background-color: var(--color-gallery);
+  background-image: url('../img/page/bgdsmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgdsdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(7) {
-  background-color: var(--color-7-blok--);
+  background-image: url('../img/page/bgcpmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcpdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(8) {
-  background-color: var(--color--3);
+  background-image: url('../img/page/bgltowMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgltowDesk.png');
+  }
 }
-.privacy_policy_wrapper:nth-child(9) {
-  background-color: var(--color-4);
-}
+// .privacy_policy_wrapper:nth-child(9) {
+//   background-image: url('../img/page/bgppmob.png');
+//   background-size: contain;
+//   @media screen and (min-width: 1200px) {
+//     background-image: url('../img/page/bgppdesk.png');
+//   }
+// }
 .privacy_policy_wrapper:nth-child(10) {
-  background-color: var(--color);
+  background-image: url('../img/page/bgcuMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcuDesk.png');
+  }
 }

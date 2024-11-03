@@ -2,10 +2,12 @@
   max-width: $mobile;
   margin: 0 auto;
   position: relative;
-  background-color: var(--color--7-blok-ready);
+  background-image: url('../img/reviews/bgreviewsmob.png');
+  background-size: contain;
   margin-bottom: 60px;
   padding-bottom: 40px;
   @media screen and (min-width: 1200px) {
+    background-image: url('../img/reviews/bgreviewsdesk.png');
     max-width: $desktop;
   }
 }
@@ -28,7 +30,7 @@
 .reviews_paragraph {
   position: absolute;
   top: 14px;
-  right: 105px;
+  right: 111px;
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 20px;

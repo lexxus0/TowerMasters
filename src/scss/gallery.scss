@@ -3,14 +3,18 @@
   margin: 0 auto 60px auto;
   padding-bottom: 40px;
   position: relative;
-  background-color: var(--color-gallery);
+  background-image: url('../img/gallery/bggalleryMob.png');
+  background-size: cover;
   @media screen and (min-width: 1200px) {
+    background-image: url('../img/gallery/bggalleryDesk.png');
+    background-size: contain;
     max-width: 1200px;
   }
 }
 
 .wood_img {
-  margin: 0 auto 30px auto;
+  margin: 5px auto 30px auto;
+  padding-top: 5px;
   @media screen and (min-width: 1200px) {
     display: none;
   }
@@ -20,6 +24,7 @@
   display: none;
   @media screen and (min-width: 1200px) {
     display: block;
+    padding-top: 7.5px;
   }
 }
 
@@ -47,14 +52,14 @@
 .gallery_paragraph {
   position: absolute;
   top: 14px;
-  right: 105px;
+  right: 111px;
   font-family: var(--font-family);
   font-weight: 900;
   font-size: 20px;
   @media screen and (min-width: 1200px) {
     font-weight: 900;
     font-size: 50px;
-    left: 40%;
+    left: 41%;
     top: 60px;
   }
 }
@@ -65,11 +70,6 @@
   @media screen and (min-width: 1200px) {
     padding-left: 40px;
   }
-}
-
-.swiper-slide {
-  display: flex;
-  justify-content: center;
 }
 
 .swiper-pagination-bullet {
