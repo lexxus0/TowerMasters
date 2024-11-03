@@ -7,6 +7,10 @@
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+
+  @include media(desktop) {
+    background-size: contain;
+  }
 }
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -21,6 +25,13 @@
   padding-top: 5px;
 }
 
+.wooden-ournament-img-about {
+
+  @include media(desktop) {
+    width: 100%;
+  }
+}
+
 .about-app-title {
   position: absolute;
   top: 50%;
@@ -31,29 +42,56 @@
   line-height: 1.35;
   color: #000000;
   white-space: nowrap;
+
+  @include media(desktop) {
+    font-size: 50px;
+    line-height: 1.4;
+  }
 }
 
 .content-wrap-about {
   padding-top: 24px;
+
+  @include media(desktop) {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
 }
 
 .rounded-video {
+  border-radius: 16px;
+  border: 6px solid #f2b282;
 
-border-radius: 16px;
-border: 6px solid #F2B282;
-
-
-
+  @include media(desktop) {
+    order: 2;
+    border: 9px solid #f2b282;
+    max-width: 548px;
+    min-height: 252px;
+  }
 }
 
 .text-about-wrap {
   padding-top: 24px;
   padding-bottom: 40px;
+
+  @include media(desktop) {
+    order: 1;
+    max-width: 452px;
+    padding-right: 2px;
+  }
 }
 
-.text-about span {
+
+.text-about-span {
   display: block;
   margin-bottom: 10px;
+
+  @include media(desktop) {
+    margin-bottom: 0;
+  }
 }
 
 .text-about {
@@ -62,12 +100,19 @@ border: 6px solid #F2B282;
   line-height: 1.35;
   text-align: left;
   margin-bottom: 10px;
+
+  @include media(desktop) {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
 }
 
 .span-text {
   font-size: 17px;
   font-weight: bold;
   line-height: 1.35;
+
+  @include media(desktop) {
+    font-size: 24px;
+  }
 }
-
-
