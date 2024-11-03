@@ -8,7 +8,6 @@
 @import './footer.scss';
 @import './back-to-home.scss';
 @import './privacy-policy.scss';
-// @import './terms-of-service.scss';
 
 @font-face {
   font-family: 'Aclonica';
@@ -62,4 +61,5 @@
 
 body {
   background-color: var(--main-background);
+  font-family: var(--font-family);
 }

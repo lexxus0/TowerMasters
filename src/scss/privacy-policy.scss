@@ -1,5 +1,4 @@
 .privacy_policy {
-  position: relative;
   max-width: 320px;
   margin: 0 auto;
   @media screen and (min-width: 1200px) {
@@ -29,7 +28,39 @@
   }
 }
 
+.back_to_home_btn {
+  border-radius: 40px;
+  width: 135px;
+  height: 40px;
+  background: rgba(121, 227, 254, 0.6);
+  box-shadow: 0 7px 21px rgba(37, 44, 97, 0.2),
+    0 3px 8px rgba(136, 144, 194, 0.25);
+  border: none;
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  z-index: 1;
+}
+
+@media screen and (min-width: 1200px) {
+  .back_to_home_btn {
+    border-radius: 999px;
+    padding: 23px 32px;
+    width: 277px;
+    top: 0;
+    left: 0;
+    height: 80px;
+  }
+}
+
+.bth_content_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
 .privacy_policy_wrapper {
+  position: relative;
   margin: 7px auto 60px;
   padding: 24px 16px 40px 16px;
   @media screen and (min-width: 1200px) {
@@ -69,32 +100,80 @@
 }
 
 .privacy_policy_wrapper:nth-child(1) {
-  background-color: var(--color-home);
+  background-image: url('../img/page/bgppmob.png');
+  background-size: contain;
+  @media screen and (min-width: 1200px) {
+    background-size: contain;
+    background-image: url('../img/page/bgppdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(2) {
-  background-color: var(--color-disclaimer);
+  background-image: url('../img/page/bgiwcmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgiwcdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(3) {
-  background-color: var(--color-advantages);
+  background-image: url('../img/page/bghwumob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bghwudesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(4) {
-  background-color: var(--color-reviews);
+  background-image: url('../img/page/bgtpsmob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgtpsdesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(5) {
-  background-color: var(--color--about-the-app);
+  background-image: url('../img/page/bgcattMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcattDesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(6) {
-  background-color: var(--color-gallery);
+  background-image: url('../img/page/bgdsMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgdsDesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(7) {
-  background-color: var(--color-7-blok--);
+  background-image: url('../img/page/bgcpMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcpDesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(8) {
-  background-color: var(--color--3);
+  background-image: url('../img/page/bgltowMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgltowDesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(9) {
-  background-color: var(--color-4);
+  background-image: url('../img/page/bgcttpMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcttpDesk.png');
+  }
 }
 .privacy_policy_wrapper:nth-child(10) {
-  background-color: var(--color);
+  background-image: url('../img/page/bgcuMob.png');
+  background-size: cover;
+  @media screen and (min-width: 1200px) {
+    background-image: url('../img/page/bgcuDesk.png');
+  }
+}
+
+.back_to_home_btn p {
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 10px;
+  color: #1e1e1e;
 }
