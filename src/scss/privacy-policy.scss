@@ -41,6 +41,9 @@
   left: 0;
   z-index: 1;
 }
+.back_to_home_btn:hover {
+  background: var(--color-gallery);
+}
 
 @media screen and (min-width: 1200px) {
   .back_to_home_btn {
