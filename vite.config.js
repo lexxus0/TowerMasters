@@ -7,13 +7,14 @@ import { globalStylesOptions } from './global.styles';
 
 export default defineConfig(({ command }) => {
   return {
+    base: '/TowerMasters/',
     define: {
       [command === 'serve' ? 'global' : '_global']: {},
     },
     root: 'src',
     build: {
       sourcemap: true,
-
+      outDir: '../dist',
       rollupOptions: {
         input: glob.sync('./src/*.html'),
         output: {
@@ -25,11 +26,10 @@ export default defineConfig(({ command }) => {
           entryFileNames: 'commonHelpers.js',
         },
       },
-      outDir: '../dist',
     },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
+      FullReload(['./src/**/*.html']),
       ViteImageOptimizer({
         exclude: /^sprite.svg$/,
         png: {
