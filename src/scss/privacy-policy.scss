@@ -70,8 +70,9 @@
 
 .privacy_policy_wrapper:nth-child(1) {
   background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-size: cover;
   @media screen and (min-width: 1200px) {
+    background-size: contain;
     background-image: url('../img/page/bgppdesk.png');
   }
 }
@@ -104,24 +105,24 @@
   }
 }
 .privacy_policy_wrapper:nth-child(6) {
-  background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-image: url('../img/page/bgdsmob.png');
+  background-size: cover;
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/page/bgppdesk.png');
+    background-image: url('../img/page/bgdsdesk.png');
   }
 }
 .privacy_policy_wrapper:nth-child(7) {
-  background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-image: url('../img/page/bgcpmob.png');
+  background-size: cover;
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/page/bgppdesk.png');
+    background-image: url('../img/page/bgcpdesk.png');
   }
 }
 .privacy_policy_wrapper:nth-child(8) {
-  background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-image: url('../img/page/bgltowMob.png');
+  background-size: cover;
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/page/bgppdesk.png');
+    background-image: url('../img/page/bgltowDesk.png');
   }
 }
 // .privacy_policy_wrapper:nth-child(9) {
@@ -132,9 +133,9 @@
 //   }
 // }
 .privacy_policy_wrapper:nth-child(10) {
-  background-image: url('../img/page/bgppmob.png');
-  background-size: contain;
+  background-image: url('../img/page/bgcuMob.png');
+  background-size: cover;
   @media screen and (min-width: 1200px) {
-    background-image: url('../img/page/bgppdesk.png');
+    background-image: url('../img/page/bgcuDesk.png');
   }
 }
