@@ -72,9 +72,9 @@
   opacity: 0;
   visibility: hidden;
   background-image: url('/img/backdrop/backdrop.png');
-  background-position: center;
+  // background-position: center;
   background-size: cover;
-  
+
   @include media(bgmobile) {
     background-position: 0% 0%;
     background-size: contain;

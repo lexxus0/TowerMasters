@@ -1,13 +1,15 @@
 .advantages-section {
   background-image: url('/img/background-advantages/bg-advantages.png');
   background-size: cover;
-  background-position: center;
+  // background-position: center;
   background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 40px;
   margin-bottom: 60px;
-  @media screen and (min-width: $desktop) {
+
+  @include media(desktop) {
     background-size: contain;
   }
 }
@@ -58,7 +60,6 @@
   flex-direction: column;
   gap: 32px;
   margin-top: 32px;
-  margin-bottom: 40px;
   padding-left: 17px;
 
   @include media(desktop) {
