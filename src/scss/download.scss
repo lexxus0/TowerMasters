@@ -2,11 +2,13 @@
   background-image: url('/img/background-download/bg-download.png');
   background-size: cover;
   background-position: center;
-  background-size: contain;
+  // background-size: contain;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 60px;
+  padding-bottom: 40px;
+
 
   @include media(desktop) {
     background-size: contain;
@@ -15,7 +17,173 @@
 
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
   only screen and (min-resolution: 192dpi) {
-    .download-section {
-      background-image: url('/img/background-download/bg-download@2x.png');
-    }
+  .download-section {
+    background-image: url('/img/background-download/bg-download@2x.png');
   }
+}
+
+.download-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.download-wooden-img {
+  min-height: 130px;
+
+  @include media(desktop) {
+    min-height: 320px;
+  }
+}
+
+.download-title-wrap {
+  position: relative;
+  padding-top: 5px;
+
+  @include media(desktop) {
+    padding-top: 9px;
+  }
+}
+
+
+.pc-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @include media(desktop) {
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+.download-title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 20px;
+  font-weight: 900;
+  line-height: 1.25;
+  color: #000000;
+  min-width: 218px;
+  text-align: center;
+
+  @include media(desktop) {
+    font-size: 50px;
+    line-height: 1.1;
+    min-width: 600px;
+  }
+}
+
+.download-list {
+  list-style-type: disc;
+  margin-top: 32px;
+  margin-left: 20px;
+  position: relative;
+  z-index: 10;
+
+  @include media(desktop) {
+    max-width: 628px;
+     margin-top: 40px;
+  }
+}
+
+.download-item:not(:last-child) {
+  margin-bottom: 10px;
+
+  @include media(desktop) {
+    margin-bottom: 20px;
+  }
+}
+
+.dowload-text {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 1.33;
+
+  @include media(desktop) {
+    font-size: 20px;
+    line-height: 1.45;
+  }
+}
+
+.download-btn-field {
+  width: 207px;
+  height: 120px;
+  position: relative;
+
+  @include media(desktop) {
+    width: 180px;
+    height: 167px;
+  }
+}
+
+
+// .download-link {
+//   width: 100%;
+//   min-height: 52px;
+//   display: flex;
+//   background-color: #FFFFFF;
+//   justify-content: space-between;
+// }
+
+.google-play-link {
+  display: block;
+  max-width: 180px;
+  margin-top: 40px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+.google-play-link object {
+  pointer-events: none;
+}
+
+
+.finger-icon {
+  width: 60px;
+  height: 94px;
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+
+  animation: fingerFloat 1.5s infinite ease-in-out; /* animation  */
+  animation-play-state: running;
+
+  @include media(desktop) {
+    max-width: 100px;
+    max-height: 134px;
+    animation: fingerFloat-large 2s infinite ease-in-out;
+  }
+}
+
+@keyframes fingerFloat {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes fingerFloat-large {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(40px);
+  }
+}
+
+.download-btn-field:active .finger-icon {
+  animation-play-state: paused;
+}
+
+

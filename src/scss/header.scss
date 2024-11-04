@@ -68,13 +68,13 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-size: cover;
   z-index: 999;
   opacity: 0;
   visibility: hidden;
   background-image: url('/img/backdrop/backdrop.png');
-  // background-position: center;
-  background-size: contain;
+  background-position: center;
+  background-size: cover;
+  // background-size: contain;
 }
 
 /* retina screen */
