@@ -74,8 +74,14 @@
   background-image: url('/img/backdrop/backdrop.png');
   background-position: center;
   background-size: cover;
-  // background-size: contain;
+  
+  @include media(bgmobile) {
+    background-position: 0% 0%;
+    background-size: contain;
+  }
 }
+
+
 
 /* retina screen */
 @media only screen and (-webkit-min-device-pixel-ratio: 2),
@@ -128,6 +134,13 @@
   @include media(desktop) {
     display: flex;
   }
+}
+
+#advantages,
+#reviews,
+#about-app,
+#gallery {
+  scroll-margin-top: 200px; /* Отступ 100 пикселей сверху */
 }
 
 .menu-hiden-item .item-link {
