@@ -9,6 +9,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (backdrop) {
         backdrop.classList.add('show');
+        document.body.style.overflow = 'hidden';
       }
     });
   }
@@ -21,6 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       if (backdrop) {
         backdrop.classList.remove('show');
+        document.body.style.overflow = 'auto';
       }
     });
   }
@@ -37,6 +39,7 @@ document.addEventListener('DOMContentLoaded', function () {
       // hide backdrop when clicked on menu item
       if (backdrop) {
         backdrop.classList.remove('show');
+        document.body.style.overflow = 'auto';
       }
 
       const targetId = item.getAttribute('href');
@@ -49,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         if (targetSection) {
           // calculate percent for scrolling
-          const offset = targetSection.offsetHeight * 0.15;
+          const offset = 100;
           // position to scroll to
           const targetPosition =
             targetSection.getBoundingClientRect().top + window.scrollY - offset;
