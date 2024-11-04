@@ -55,3 +55,7 @@ export default defineConfig(({ command }) => {
     },
   };
 });
+
+
+// /^(sprite|gp-btn)\.svg$/
+// exclude: /^sprite.svg$/,
