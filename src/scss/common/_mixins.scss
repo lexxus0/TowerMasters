@@ -14,11 +14,7 @@
     @media screen and (min-width: $desktop) {
       @content;
     }
-  } @else if $_screen == bgmobile {
-    @media screen and (min-width: $bgmobile) {
-      @content;
-    }
-  }
+  } 
 }
 
 @mixin font($_fsz, $_lnh) {
