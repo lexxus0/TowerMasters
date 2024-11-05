@@ -5,11 +5,13 @@
   background-image: url('../img/hero/bgheromob.png');
   background-size: contain;
   margin-bottom: 60px;
+  position: relative;
 
   @media screen and (min-width: 1200px) {
     max-width: 1200px;
-    background-image: url('../img/hero/heroDesk.png');
-    position: relative;
+    background-size: auto;
+    padding-bottom: 5px;
+    background-image: url('../img/hero/superbg.png');
   }
 }
 
@@ -56,4 +58,11 @@
 
 .hero-button {
   border: 0;
+}
+.svg_hero {
+  transition: filter 0.3s ease;
+}
+
+.svg_hero:hover {
+  filter: invert(1);
 }

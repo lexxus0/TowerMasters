@@ -11,8 +11,9 @@
   font-weight: 700;
   font-size: 24px;
   text-align: center;
-  margin: 24px auto 60px auto;
+  margin: 0 auto 24px auto;
   @media screen and (min-width: 1200px) {
+    margin: 0 auto 20px auto;
     font-size: 50px;
   }
 }
@@ -66,9 +67,9 @@
 .privacy_policy_wrapper {
   position: relative;
   margin: 7px auto 60px;
-  padding: 24px 16px 40px 16px;
+  padding: 40px 16px 40px 16px;
   @media screen and (min-width: 1200px) {
-    margin: 10px auto 80px;
+    margin: 0 auto 80px;
     padding: 40px 70px;
   }
   p {
@@ -82,6 +83,9 @@
   .last {
     margin-bottom: 10px;
     text-align: center;
+    @media screen and (min-width: 1200px) {
+      margin-bottom: 40px;
+    }
   }
   .left {
     text-align: left;
@@ -118,6 +122,93 @@
     background-image: url('../img/page/bgiwcdesk.png');
   }
 }
+
+.privacy_policy_wrapper2 {
+  position: relative;
+  margin: 7px auto 60px;
+  padding: 40px 16px 40px 16px;
+  background-image: url('../img/page/aotmon.png');
+  background-size: cover;
+  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto 80px;
+    padding: 40px 70px;
+    background-image: url('../img/page/aotdesk.png');
+  }
+}
+
+.privacy_policy_wrapper3 {
+  position: relative;
+  margin: 7px auto 60px;
+  padding: 40px 16px 40px 16px;
+  background-image: url('../img/page/mob.png');
+  background-size: cover;
+  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto 80px;
+    background-size: contain;
+    padding: 40px 70px;
+    background-image: url('../img/page/desk.png');
+  }
+}
+
+.privacy_policy_wrapper7 {
+  position: relative;
+  margin: 7px auto 60px;
+  padding: 40px 16px 40px 16px;
+  background-image: url('../img/page/bgcpMob.png');
+  background-size: cover;
+  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto 80px;
+    background-size: cover;
+    padding: 40px 70px;
+    background-image: url('../img/page/desk2.png');
+  }
+}
+
+.privacy_policy_wrapper10 {
+  position: relative;
+  margin: 7px auto 60px;
+  padding: 40px 16px 40px 16px;
+  background-image: url('../img/page/bgcttpMob.png');
+  background-size: cover;
+  p {
+    font-family: var(--font-family);
+    font-weight: 500;
+    font-size: 16px;
+    @media screen and (min-width: 1200px) {
+      font-size: 32px;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 0 auto 80px;
+    background-size: contain;
+    padding: 40px 70px;
+  }
+}
+
 .privacy_policy_wrapper:nth-child(3) {
   background-image: url('../img/page/bghwumob.png');
   background-size: cover;
@@ -150,6 +241,7 @@
   background-image: url('../img/page/bgcpMob.png');
   background-size: cover;
   @media screen and (min-width: 1200px) {
+    background-size: cover;
     background-image: url('../img/page/bgcpDesk.png');
   }
 }
@@ -167,10 +259,12 @@
     background-image: url('../img/page/bgcttpDesk.png');
   }
 }
+
 .privacy_policy_wrapper:nth-child(10) {
   background-image: url('../img/page/bgcuMob.png');
   background-size: cover;
   @media screen and (min-width: 1200px) {
+    background-size: contain;
     background-image: url('../img/page/bgcuDesk.png');
   }
 }
