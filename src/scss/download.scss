@@ -30,7 +30,7 @@
 }
 
 .download-wooden-img {
-  height: 130px;
+  height: 135px;
   @include media(desktop) {
     min-height: 320px;
   }
@@ -39,7 +39,6 @@
 .download-title-wrap {
   position: relative;
   padding-top: 5px;
-  min-height: 130px;
 
   @include media(desktop) {
     padding-top: 9px;
@@ -60,16 +59,18 @@
 }
 .download-title {
   position: absolute;
+  padding-top: 5px;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 20px;
   font-weight: 900;
-  line-height: 1.2;
+  line-height: 1.1;
   color: #000000;
   min-width: 218px;
   text-align: center;
   align-items: center;
+  letter-spacing: -0.2px;
 
   @include media(desktop) {
     font-size: 50px;
@@ -78,11 +79,7 @@
   }
 }
 
-@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
-  .download-title {
-    line-height: 1;
-  }
-}
+
 
 
 
