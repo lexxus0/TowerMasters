@@ -8,7 +8,6 @@
   margin-bottom: 60px;
   padding-bottom: 40px;
 
-
   @include media(desktop) {
     background-size: contain;
   }
@@ -26,7 +25,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
 }
 
 .download-wooden-img {
@@ -45,7 +43,6 @@
   }
 }
 
-
 .pc-container {
   display: flex;
   flex-direction: column;
@@ -63,12 +60,12 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 900;
   line-height: 1.1;
   color: #000000;
   width: 100%;
-  max-width: 225px;
+  max-width: 211px;
   text-align: center;
   align-items: center;
   letter-spacing: -0.2px;
@@ -90,7 +87,7 @@
 
   @include media(desktop) {
     max-width: 628px;
-     margin-top: 40px;
+    margin-top: 40px;
   }
 }
 
@@ -124,7 +121,6 @@
   }
 }
 
-
 // .download-link {
 //   width: 100%;
 //   min-height: 52px;
@@ -155,7 +151,6 @@
   pointer-events: none;
 }
 
-
 .finger-icon {
   width: 60px;
   height: 94px;
@@ -175,7 +170,8 @@
 }
 
 @keyframes fingerFloat {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -184,7 +180,8 @@
 }
 
 @keyframes fingerFloat-large {
-  0%, 100% {
+  0%,
+  100% {
     transform: translateY(0);
   }
   50% {
@@ -195,5 +192,3 @@
 .download-btn-field:active .finger-icon {
   animation-play-state: paused;
 }
-
-
