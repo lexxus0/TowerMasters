@@ -78,6 +78,14 @@
   }
 }
 
+@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+  .download-title {
+    line-height: 1;
+  }
+}
+
+
+
 .download-list {
   list-style-type: disc;
   margin-top: 32px;
