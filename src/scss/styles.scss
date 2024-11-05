@@ -65,16 +65,22 @@ body {
   z-index: 1;
 }
 
+.fixed-background {
+  display: flex;
+  max-width: 320px;
+  justify-content: center;
+}
+
 .clouds {
   position: fixed;
   z-index: -1;
-  width: 300px;
+  width: 320px;
   height: 60px;
   top: 510px;
 
   @include media(desktop) {
     width: 1000px;
     height: 80px;
-    top: 250px;
+    top: 750px;
   }
 }
