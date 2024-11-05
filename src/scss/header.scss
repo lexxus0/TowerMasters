@@ -77,6 +77,8 @@
 
   background-size: auto 100%;
   background-repeat: repeat-x;
+
+  padding: 5px;
 }
 
 
@@ -157,6 +159,11 @@
 
 .adventages-item {
   min-width: 155px;
+}
+
+.item-link:hover,
+.item-link:active {
+  background-color: #96E3ED;
 }
 
 .item-link {

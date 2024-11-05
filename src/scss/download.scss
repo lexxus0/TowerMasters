@@ -84,8 +84,9 @@
   list-style-type: disc;
   margin-top: 32px;
   margin-left: 20px;
-  position: relative;
-  z-index: 10;
+  // position: relative;
+  // z-index: 10;
+  margin-bottom: 10px;
 
   @include media(desktop) {
     max-width: 628px;
@@ -140,7 +141,14 @@
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
+}
 
+.svg-btn {
+  transition: filter 0.3s ease;
+}
+
+.svg-btn:hover {
+  filter: invert(1);
 }
 
 .google-play-link object {
