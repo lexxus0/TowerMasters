@@ -67,7 +67,8 @@
   font-weight: 900;
   line-height: 1.1;
   color: #000000;
-  min-width: 218px;
+  width: 100%;
+  max-width: 225px;
   text-align: center;
   align-items: center;
   letter-spacing: -0.2px;
@@ -78,10 +79,6 @@
     min-width: 600px;
   }
 }
-
-
-
-
 
 .download-list {
   list-style-type: disc;
